@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Moksh Pawar | Portfolio</title>
+<meta name="description" content="Moksh Pawar - Java Developer | Software Engineer | CSE Graduate">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0F172A;--muted:#475569;--blue:#2563EB;--tile:#EAF1FD;--line:#E2E8F0;--bg:#F8FAFC;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:90px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Inter,system-ui,sans-serif}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1360px;margin:0 auto;padding:0 40px}
+header.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:90px}
+.brand{display:flex;align-items:center;gap:14px;font-weight:700;font-size:22px}
+.logo{width:52px;height:52px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:18px;font-weight:700}
+.links{display:flex;gap:34px;font-weight:500;font-size:17px}
+.links a:hover{color:var(--blue)}
+.right{display:flex;align-items:center;gap:14px}
+.ic{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;background:#fff;font-weight:700;font-size:16px}
+.ic svg{width:22px;height:22px;fill:var(--ink)}
+.hero{background:linear-gradient(120deg,#F8FAFC 40%,#EEF3FD);padding:100px 0 110px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:60px;align-items:center}
+.eyebrow{color:var(--blue);font-weight:600;font-size:16px;letter-spacing:.2em;text-transform:uppercase;margin:0 0 18px}
+h1{font-size:clamp(46px,7vw,84px);font-weight:800;letter-spacing:-.03em;line-height:1.05;margin:0 0 26px}
+.sub{font-size:clamp(20px,2.4vw,28px);font-weight:500;margin:0 0 40px}
+.btns{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:22px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;border:1px solid var(--line);background:#fff;font-weight:600;font-size:17px}
+.btn.d{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn.s{padding:12px 22px;font-size:16px;font-weight:500}
+.card{background:#fff;border-radius:30px;padding:30px;box-shadow:0 18px 50px rgba(15,23,42,.08)}
+.who{display:flex;gap:20px;align-items:center;padding-bottom:26px;border-bottom:1px solid var(--line)}
+.who .logo{border-radius:20px;width:80px;height:80px;font-size:28px}
+.who b{font-size:25px;display:block;line-height:1.2}
+.who span{color:var(--muted)}
+.info{list-style:none;padding:0;margin:22px 0;display:grid;gap:14px;color:var(--muted)}
+.info li::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--blue);margin-right:14px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tile{background:var(--tile);border-radius:20px;padding:22px 10px;text-align:center}
+.tile b{display:block;font-size:24px}
+.tile span{font-size:14px;color:var(--muted);line-height:1.3;display:block;margin-top:6px}
+section.s{padding:90px 0;background:#fff;border-top:1px solid var(--line)}
+section.s.alt{background:var(--bg)}
+h2{font-size:clamp(30px,4.5vw,46px);font-weight:800;letter-spacing:-.02em;line-height:1.15;margin:0 0 36px;max-width:22ch}
+.about{max-width:70ch;color:var(--muted);font-size:19px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.box{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px}
+.alt .box{background:#fff}
+.box h3{margin:0 0 6px;font-size:22px}
+.box .meta{color:var(--blue);font-weight:600;font-size:15px;margin-bottom:12px}
+.box p,.box li{color:var(--muted)}
+.box ul{padding-left:20px;margin:0}
+.box li{margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:var(--tile);border-radius:999px;padding:8px 18px;font-weight:500;font-size:16px}
+.skillrow{margin-bottom:22px}
+.skillrow h3{font-size:18px;margin:0 0 10px}
+.contact .btns{margin-top:10px}
+footer{padding:30px 0 40px;color:var(--muted);font-size:15px;text-align:center;border-top:1px solid var(--line);background:#fff}
+@media (max-width:1000px){.links{display:none}.hero .wrap{grid-template-columns:1fr}.hero{padding:60px 0}}
+@media (max-width:600px){.wrap{padding:0 20px}nav{height:74px}.brand{font-size:18px}.logo{width:42px;height:42px;font-size:15px}.ic{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><nav>
+<a class="brand" href="#home"><span class="logo">MP</span>Moksh Pawar</a>
+<div class="links"><a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a></div>
+<div class="right">
+<a class="ic" href="https://github.com/Mokshpawar01" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+<a class="ic" href="https://www.linkedin.com/in/moksh-pawar" rel="noopener" aria-label="LinkedIn">in</a>
+</div></nav></div></header>
+ 
+<main>
+<section class="hero" id="home"><div class="wrap">
+<div>
+<p class="eyebrow">Open to early opportunities</p>
+<h1>Moksh Pawar</h1>
+<p class="sub">Java Developer | Software Engineer | CSE Graduate</p>
+<div class="btns"><a class="btn d" href="#projects">View Projects &rarr;</a><a class="btn" href="#contact">Contact Me</a></div>
+<div class="btns"><a class="btn s" href="https://github.com/Mokshpawar01" rel="noopener">GitHub</a><a class="btn s" href="https://www.linkedin.com/in/moksh-pawar" rel="noopener">LinkedIn</a></div>
+</div>
+<aside class="card" aria-label="Profile summary">
+<div class="who"><span class="logo">MP</span><div><b>Moksh Pawar</b><span>Java Developer</span></div></div>
+<ul class="info"><li>Pusad, Maharashtra, India</li><li>pawarmoksha1@gmail.com</li><li>+91 9021314620</li></ul>
+<div class="tiles"><div class="tile"><b>B.E.</b><span>CSE Graduate</span></div><div class="tile"><b>Java</b><span>Core Java &amp; Web</span></div><div class="tile"><b>SQL</b><span>MySQL Database</span></div></div>
+</aside>
+</div></section>
+ 
+<section class="s" id="about"><div class="wrap">
+<p class="eyebrow">About me</p>
+<h2>Computer Science graduate who builds web applications</h2>
+<p class="about">I am a motivated Computer Science Engineering graduate (2026) looking for an entry-level Software Engineer or Java Developer role. I want to apply my knowledge of Java, web development and MySQL while learning new technologies and contributing to the success of the team.</p>
+</div></section>
+ 
+<section class="s alt" id="education"><div class="wrap">
+<p class="eyebrow">Education</p>
+<h2>My academic background</h2>
+<div class="grid">
+<div class="box"><h3>B.E. in Computer Science and Engineering</h3><div class="meta">Graduating 2026</div><p>Babasaheb Naik College of Engineering, Pusad (SGBAU, Amravati)<br>CGPA 7.1/10 | Aggregate 77.00%</p></div>
+<div class="box"><h3>HSC (12th)</h3><div class="meta">March 2022 | 75.83%</div><p>Athar Mirza Jr College High School, Kali Dk, Maharashtra</p></div>
+<div class="box"><h3>SSC (10th)</h3><div class="meta">81.00%</div><p>Vasantrao Naik High School, Pusad, Maharashtra</p></div>
+</div></div></section>
+ 
+<section class="s" id="projects"><div class="wrap">
+<p class="eyebrow">Projects</p>
+<h2>Things I have built</h2>
+<div class="grid">
+<div class="box"><h3>Cloud-Based Online Voting System</h3><div class="meta">React, Node.js, MongoDB</div><ul><li>Secure voter registration, authentication and online voting.</li><li>Login authentication, face verification and one-user-one-vote for security.</li><li>Admin features to manage elections, parties, voters and results.</li><li>Deployed on the cloud for secure, accessible voting.</li></ul></div>
+<div class="box"><h3>Login Authentication System</h3><div class="meta">HTML, CSS, PHP, MySQL</div><ul><li>Full stack app with user registration, login and session management.</li><li>Password hashing in PHP to protect credentials in the database.</li><li>PHP sessions to keep user state and restrict protected pages.</li></ul></div>
+</div></div></section>
+ 
+<section class="s alt" id="skills"><div class="wrap">
+<p class="eyebrow">Skills</p>
+<h2>Technologies I work with</h2>
+<div class="skillrow"><h3>Programming</h3><div class="chips"><span class="chip">Java</span></div></div>
+<div class="skillrow"><h3>Web</h3><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div></div>
+<div class="skillrow"><h3>Database</h3><div class="chips"><span class="chip">MySQL</span></div></div>
+<div class="skillrow"><h3>Tools</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span></div></div>
+<div class="skillrow"><h3>Used in projects</h3><div class="chips"><span class="chip">PHP</span><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">MongoDB</span></div></div>
+</div></section>
+ 
+<section class="s" id="certifications"><div class="wrap">
+<p class="eyebrow">Certifications</p>
+<h2>Learning and activities</h2>
+<div class="grid">
+<div class="box"><h3>Cloud Computing</h3><p>NPTEL, IIT Kharagpur</p></div>
+<div class="box"><h3>Hackathon for Web Development</h3><p>Participation</p></div>
+<div class="box"><h3>Research Paper Presentation</h3><p>Presented a research paper</p></div>
+</div></div></section>
+ 
+<section class="s alt contact" id="contact"><div class="wrap">
+<p class="eyebrow">Contact</p>
+<h2>Let's work together</h2>
+<p class="about">I am open to entry-level Software Engineer and Java Developer roles. Send me a message and I will reply soon.</p>
+<div class="btns"><a class="btn d" href="mailto:pawarmoksha1@gmail.com">Email Me</a><a class="btn" href="https://github.com/Mokshpawar01" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com/in/moksh-pawar" rel="noopener">LinkedIn</a></div>
+</div></section>
+</main>
+<footer>© 2026 Moksh Sandip Pawar</footer>
+</body>
+</html>
+ 
